@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "spincd";
+	src: url("../Fontes/SPINCD__.TTF");
+}
+
+@font-face {
+	font-family: "Blockbuster";
+	src: url("../Fontes/Blockbuster.ttf");
+}
+
+@font-face {
+	font-family: "Royalacid";
+	src: url("../Fontes/Royalacid.ttf");
+}
+
+
+/* aqui é para os Cabeçalho*/
+
+
+@font-face {
+	font-family: "AndaleMono";
+	src: url("../Fontes/AndaleMono.ttf");
+}
+
+@font-face {
+	font-family: "Bold";
+	src: url("../Fontes/Yanone\ Kaffeesatz\ Bold.otf");
+}
+
+@font-face {
+	font-family: "BonvenoCF";
+	src: url("../Fontes/BonvenoCF-Light.otf");
+}
+
+
+@font-face {
+	font-family: "PRICEDOW";
+	src: url("../Fontes/PRICEDOW.TTF");
+}
+@font-face {
+	font-family: "MORPHEUS";
+	src: url("../Fontes/MORPHEUS.TTF");
+}
+@font-face {
+	font-family: "GAMECUBEN";
+	src: url("../Fontes/gamecuben.ttf");
+}
+@font-face {
+	font-family: "MO";
+	src: url("../Fontes/MO.TTF");
+}

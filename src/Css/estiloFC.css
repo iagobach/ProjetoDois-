@@ -1,0 +1,283 @@
+.cabecalho {
+    height: 45px;
+    background-color: #114e8c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 0px solid;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    z-index: 10;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 10px;
+}
+
+.cabecalho .logo img {
+    width: 50px;
+    height: 35px;
+}
+
+.cabecalho .logo .logo2 {
+    width: 180px;
+    height: 35px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu li {
+    padding: 20px 0px 0px 0px;
+    font-family: 'Times New Roman';
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(12, 27, 39);
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+
+.cabecalho .menu .opcoesmenu :hover {
+    background-color: #d3e9e7;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.cabecalho .menu li img {
+    width: 15px;
+    height: 15px;
+
+}
+
+/* aqui começa o CSS do main */
+
+.topo{
+    min-width: calc(100vh - 45px);
+    padding-top: 80px;
+    text-align: left;
+    padding: 20px;
+    background: #114e8c;
+ 
+}
+.topo .seguimeto{
+    margin-top: 50px;
+    font-family: 'Montserrat',sans-serif;;
+    font-size: 20px;
+    color: white;
+    padding: 10px 10px 0px 10x;
+}
+
+.topo h1{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 70px;
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+}
+
+
+/*aqui é o css dos contatos*/
+.atentimento{
+    padding-top: 80px;
+    background: hsl(211, 86%, 92%);
+   padding-bottom: 150px;
+}
+
+.atentimento .info{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 75px 0px 75px;
+}
+
+.atentimento .info h4{
+    font-size: 26px;
+    text-align: left;
+    color: hsl(240, 54%, 38%);
+}
+.atentimento .info .horario li{
+    font-size: 22px;
+    text-align: left;
+    padding: 5px;
+    color: hsl(220, 2%, 27%);
+}
+
+.atentimento .info .contatos a:hover{
+    font-size: 20px;
+    color: #d6d6d6;
+}
+
+.atentimento .info ul li img{
+    width: 18px;
+    height: 15px;
+   
+}
+
+.atentimento .contatos{
+    text-align: left;
+}
+
+.atentimento .contatos h3{
+    color: hsl(240, 54%, 38%);
+    font-size: 24px;
+}
+.atentimento .contatos li{
+    color: hsl(220, 2%, 27%);
+    font-size: 19px;
+    text-align: left;
+    padding: 5px;
+}
+
+
+.atentimento .email{
+ display: flex;
+ flex-direction: column;
+margin-top: 40px;
+}
+
+.atentimento .email input{
+    font-size: 15px;
+    border-radius: 5%;
+    margin: 5px;
+    width: 600px ;
+    height: 50px;
+    padding: 0px 0px 0px 15px;
+    border: 1px solid #50589b; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+.atentimento .email .mensagem{
+    font-size: 15px;
+    border-radius: 5%;
+    margin: 5px;
+    width: 600px ;
+    height: 50px;
+    padding: 0px 0px 0px 15px;
+    border: 1px solid #50589b; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    width: 600px ;
+    height: 150px;
+    padding: 10px 0px 0px 15px;
+}
+
+
+
+.atentimento .email .botaoenviar{
+    transition: all 0.4s ease;
+    margin: 10px 0px 0px 0px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 800px;
+    line-height: 1;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 30px;
+    background: #114e8c;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #114e8c;
+    cursor: pointer;
+    width: 10%;
+}
+
+.atentimento .email .botaoenviar:hover{
+    background-color:#ffffff ;
+    color: #114e8c;
+}
+
+/*aqui é do mapa*/
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:95%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+
+.rodape {
+    background-color: #0b0b0b;
+    color: white;
+    display: flex;
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 20px;
+    font-size: 17px;
+    padding-bottom: 8px;
+}
+
+.rodape .areas {
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+.rodape .rodapelink {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape .rodapelink img {
+    width: 15px;
+    height: 15px;
+}
+
+.rodape .rodapelink li {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.rodape .rodapelink .ul1 li {
+    padding-left: 30px;
+}
+
+.rodape .rodapelink li:hover {
+    font-size: 19px;
+}
+
+
+.rodape .divcontatos {
+    padding-left: 180px;
+}
+
+.rodape .divcontatos .contatos {
+    display: flex;
+
+}
+
+.rodape .divcontatos h4 {
+    padding-left: 150px;
+    padding-top: 5px;
+
+}
+
+.rodape .divcontatos .contatos li {
+    justify-content: center;
+    padding-left: 22px;
+    padding-top: 10px;
+}

@@ -1,0 +1,743 @@
+.cabecalho {
+    height: 45px;
+    background-color: #e0f2f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 0px solid;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 10px;
+}
+
+.cabecalho .logo img {
+    width: 50px;
+    height: 35px;
+}
+
+.cabecalho .logo .logo2 {
+    width: 180px;
+    height: 35px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu li {
+    padding: 20px 0px 0px 0px;
+    font-family: 'Times New Roman';
+    color: rgb(18, 25, 31);
+    border-bottom: 3px solid rgb(12, 27, 39);
+    padding-bottom: 2px;
+    font-size: 16px;
+}
+
+.cabecalho .menu .opcoesmenu :hover {
+    background-color: #d3e9e7;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.cabecalho .menu li img {
+    width: 15px;
+    height: 15px;
+
+}
+
+
+
+/* aqui começa o CSS do main */
+
+.face {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.face::after {
+    content: "";
+    position: absolute;
+    height: 740px;
+    width: 100%;
+    background: linear-gradient(65deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7) 30%, transparent 90%);
+}
+
+.face .imagemface {
+    width: 100%;
+    height: 740px;
+}
+
+.face .apresentacao {
+    color: aliceblue;
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 40px;
+    max-width: 1000px;
+}
+
+.face .apresentacao .primeface {
+    width: 780px;
+    height: 250px;
+    filter: brightness(150%);
+}
+
+.face .apresentacao .nomeempresa {
+    font-family: 'spincd';
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.face .apresentacao .texto {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+
+}
+
+.face .apresentacao .texto .numero8 {
+    font-size: 32px;
+    font-family: fantasy;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/*  aqui começa o sobre nos */
+
+.sobrenos {
+    border: 32px solid hsl(222, 50%, 80%);
+    position: relative;
+    min-height: calc(100vh - 50px);
+    background-image: url(../Imagem/imagem\ sobre\ nos\ \(1\).jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.533);
+    background-position: center;
+    background-blend-mode: color-burn;
+    color: rgb(209, 214, 240);
+}
+
+.sobrenos .titulosobrenos{
+    text-align: center;
+    border-bottom: 4px solid hsl(200, 39%, 38%);
+    font-family: 'BonvenoCF';
+    font-size: 70px;
+    display: inline-block;
+}
+.sobrenos .background {
+    opacity: 53%;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    background-color: hsl(210, 40%, 88%);
+}
+
+.sobrenos .imagemdaprime {
+    z-index: 3;
+    margin:13% 0px 0px 3% ;
+    width: 350px;
+    height: 290px;
+    position: absolute;
+}
+
+
+.sobrenos .historiadaprime { 
+    margin: 16% 0px 0px 18%; 
+    max-width: 70%;  
+    text-align: center;
+    border: 3px solid hsl(210, 40%, 88%);
+    z-index: 1;
+}
+
+.sobrenos .historiadaprime h1 {
+    font-family: 'BonvenoCF';
+    font-size: 48px;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 80px;
+    font-weight: bold;
+}
+
+.sobrenos .historiadaprime h2 {
+    padding-left: 125px;
+    font-size: 22px;
+    font-family: 'BonvenoCF';
+    text-align: center;
+}
+
+.sobrenos .historiadaprime .p1 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'lucida sans unicode';
+    text-align: justify;
+    z-index: 3;
+    padding-left: 115px;
+    margin-left: 30px;
+}
+
+.sobrenos .historiadaprime li {
+    margin: 6px 0px 18px 30px;
+    margin-top: 6px;
+    margin-left: 30px;
+    max-width: 770px;
+    font-size: 20px;
+    font-family: 'Lucida Sans Unicode';
+    text-align: justify;
+    z-index: 3;
+}
+
+
+.sobrenos .titulosocios {
+    font-family: 'BonvenoCF';
+    font-size: 36px;
+    justify-content: center;
+    padding-top: 28px;
+    text-align: center;
+}
+
+.sobrenos .socios {
+    display: flex;
+    justify-content: center;
+}
+
+.sobrenos .socios h1 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.sobrenos .socios li {
+    padding: 50px;
+    padding-top: 15px;
+}
+
+.sobrenos .socios img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+
+}
+
+
+.sobrenos .titulogerente {
+    padding-top: 35px;
+    display: flex;
+    left: 50%;
+    font-family: 'BonvenoCF';
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobrenos .gerente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrenos .gerente li {
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.sobrenos .gerente h1 {
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sobrenos .gerente p {
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    text-align: center;
+}
+
+.sobrenos .gerente img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+
+
+
+
+/*aqui começa os clientes*/
+.nossoscliente {
+    padding-top: 80px;
+    text-align: center;
+    background-image: url(../Imagem/background\ clientes.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.nossoscliente .ct {
+    border-bottom: 4px solid hsl(200, 39%, 38%);
+    font-family: 'BonvenoCF';
+    font-size: 70px;
+    display: inline-block;
+    color: white;
+}
+
+.nossoscliente .grupo1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.nossoscliente .grupo1 li {
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'GAMECUBEN';
+    font-size: 8px;
+    color: white;
+}
+
+
+.nossoscliente .grupo1 li img {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+
+}
+
+.nossoscliente .grupo2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.nossoscliente .grupo2 li {
+    margin: 60px 70px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'GAMECUBEN';
+    font-size: 8px;
+    color: white;
+}
+
+.nossoscliente .grupo2 li img {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.nossoscliente .grupo2 .rosso {
+    background-color: white;
+}
+
+/* INFormaçoes */
+
+.informacao {
+    text-align: center;
+    margin: 0px;
+    background: hsl(210, 40%, 88%);
+}
+
+.informacao h1 {
+    border-bottom: 4px solid hsl(200, 39%, 38%);
+    font-family: 'BonvenoCF';
+    font-size: 70px;
+    display: inline-block;
+    color: black;
+    margin-top: 180px;
+}
+
+.informacao .descricaosetor{
+    padding: 15px;
+    font-size: 22px;
+    font-family: 'Lucida Sans Unicode';
+    text-align: center;
+}
+
+.informacao h2 {
+    font-size: 40px;
+    padding-top: 15px;
+}
+
+
+.informacao .departamentos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 170px 8px 170px;
+}
+
+
+.informacao .departamentos li {
+    border: 1px solid black;
+    background: linear-gradient(to right, #ecf0f1, #b3c7e1, #ecf0f1);
+}
+
+.informacao .departamentos li img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding-top: 18px;
+}
+
+.informacao .departamentos li h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.informacao .departamentos li p {
+    padding: 15px;
+    font-size: 16.5px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.informacao .departamentos li p::before {
+    content: '\2022';
+    margin-right: 6px;
+    font-size: 1.2em;
+}
+
+
+.informacao .tempresa {
+    border-bottom: 4px solid hsl(200, 39%, 38%);
+    font-family: 'BonvenoCF';
+    font-size: 70px;
+    display: inline-block;
+    color: black;
+}
+
+.informacao .dempresas{
+    padding-top: 15px;
+    font-size: 22px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.informacao .empresas {
+    display: flex;
+    text-align: center;
+    margin: 15px 150px 8px 150px;
+}
+
+
+.informacao .empresas li {
+    border: 1px solid black;
+    background: linear-gradient(to right, #ecf0f1, #b3c7e1, #ecf0f1);
+    max-width: 560px;
+    
+}
+.informacao .empresas .lix {
+    border: 1px solid black;
+    background: linear-gradient(to right, #ecf0f1, #b3c7e1, #ecf0f1);
+    max-width: 280px;
+    
+}
+.informacao .empresas li img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding-top: 18px;
+}
+
+.informacao .empresas li h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 18px;
+}
+
+.informacao .empresas li h5 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+
+.informacao .empresas li p {
+    padding: 15px;
+    font-size: 16.5px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.informacao .empresas li p::before {
+    content: '\2022';
+    margin-right: 6px;
+    font-size: 1.2em;
+}
+
+
+
+.informacao .informativo{
+    margin-top: 260px;
+}
+
+
+.informacao .noticias {
+    max-width: 85%;
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+
+.informacao .noticias .data {
+    margin-top: 30px;
+    border-bottom: 2px solid hsl(195, 2%, 38%);
+    text-align: left;
+    justify-content: left;
+    font-weight: bold;
+}
+
+
+.informacao .noticias li h4 {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+
+.informacao .noticias li p {
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    margin-top:6px ;
+    text-align: justify;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
+
+.informacao .mais {
+    display: none;
+    opacity: 0;
+    margin-top: 0px;
+}
+
+.informacao .mais.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+
+.informacao .maisx {
+    display: none;
+    opacity: 0;
+    margin-top: 0px;
+}
+
+.informacao .maisx.ativo {
+    display: flex;
+    opacity: 1;
+    
+}
+
+
+.informacao .maisz {
+    display: none;
+    opacity: 0;
+    margin-top: 0px;
+}
+
+.informacao .maisz.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+.informacao button {
+    background: none;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid hsl(222, 50%, 80%);
+    display: inline-block;
+    padding-top: 1px;
+}
+
+.informacao button:hover{
+    font-size: 34px;
+
+}
+
+.informacao .leiamaisz{
+    margin-bottom: 150px;
+}
+
+
+/*area do cliente*/
+.areadocliente {
+    padding-top: 80px;
+    text-align: center;
+    background-image: url(../Imagem/area-do-cliente.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    background-blend-mode: color-burn;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 70px;
+}
+
+
+
+.areadocliente h1 {
+    text-align: center;
+    border-bottom: 4px solid hsl(200, 39%, 38%);
+    font-family: 'BonvenoCF';
+    font-size: 65px;
+    display: inline-block;
+    color: white;
+    margin-top: 65px;
+}
+
+.areadocliente nav {
+    margin-top: 50px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.areadocliente nav p {
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+
+.areadocliente nav ul li {
+    justify-content: center;
+    padding-top: 30px;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+
+.areadocliente nav ul a {
+    justify-content: center;
+    padding-top: 30px;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.areadocliente nav ul a:hover {
+    font-size: 32px;
+    color: hsl(222, 50%, 80%);
+}
+
+
+
+.areadocliente nav{
+    margin-bottom: 50px;
+}
+
+.areadocliente .sejacliente{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 30% 25px 30% ;
+    text-align: center;
+    font-size: 40px;
+    color: #e0f2f1;
+    font-family: 'arial';
+    border:3px solid rgb(225, 225, 255, 0.7);
+}
+
+.areadocliente .textosejacliente{
+color: white;
+justify-content: center;
+    padding-top: 20px;
+    font-family: 'Times New Roman';
+    font-size: 33px;
+}
+
+
+.areadocliente .sejacliente:hover{
+    font-size: 45px;
+    color: #ecf0f1;
+}
+
+
+
+
+
+
+
+/*rodape*/
+
+.rodape {
+    background-color: #0b0b0b;
+    color: white;
+    display: flex;
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 20px;
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.rodape .areas {
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+.rodape .rodapelink {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape .rodapelink img {
+    width: 15px;
+    height: 15px;
+}
+
+.rodape .rodapelink li {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.rodape .rodapelink .ul1 li {
+    padding-left: 30px;
+}
+
+.rodape .rodapelink li:hover {
+    font-size: 19px;
+}
+
+
+.rodape .divcontatos {
+    padding-left: 180px;
+}
+
+.rodape .divcontatos .contatos {
+    display: flex;
+
+}
+
+.rodape .divcontatos h4 {
+    padding-left: 150px;
+    padding-top: 5px;
+
+}
+
+.rodape .divcontatos .contatos li {
+    justify-content: center;
+    padding-left: 22px;
+    padding-top: 10px;
+}
